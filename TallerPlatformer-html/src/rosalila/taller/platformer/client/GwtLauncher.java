@@ -1,6 +1,7 @@
 package rosalila.taller.platformer.client;
 
 import rosalila.taller.platformer.TallerPlatformer;
+
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;

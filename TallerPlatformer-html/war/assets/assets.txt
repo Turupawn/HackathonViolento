@@ -1,0 +1,26 @@
+d:war/:0:application/unknown
+b:level1 bk.tmx:20599:application/unknown
+i:comprador3.png:917:image/png
+i:ivis2.png:1319:image/png
+b:nivel1.tmx:61095:application/unknown
+a:music.ogg:243613:application/unknown
+i:extorsionada.png:880:image/png
+i:jefe.png:1404:image/png
+i:tileSet.png:18639:image/png
+i:koalio.png:3378:image/png
+b:nivel4.tmx:61095:application/unknown
+b:nivel5.tmx:41103:application/unknown
+i:ivis.png:1365:image/png
+i:asesinado.png:1254:image/png
+i:comprador1.png:887:image/png
+b:level1.tmx:21095:application/unknown
+i:comprador2.png:888:image/png
+i:policia.png:1506:image/png
+b:nivel3.tmx:61095:application/unknown
+b:nivel2.tmx:81099:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl:5068:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl:8574:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl:549:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl:2687:application/unknown
+t:com/badlogic/gdx/utils/arial-15.fnt:21743:application/unknown
+i:com/badlogic/gdx/utils/arial-15.png:21814:image/png
