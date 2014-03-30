@@ -55,6 +55,9 @@ public class TallerPlatformer extends GdxTest {
 	private Animation walk;
 	private Animation jump;
 	private Koala koala;
+	
+	int NIVEL=5;
+	
 	private Pool<Rectangle> rectPool = new Pool<Rectangle>() {
 		@Override
 		protected Rectangle newObject () {
@@ -68,7 +71,7 @@ public class TallerPlatformer extends GdxTest {
 	@Override
 	public void create () {
 		// load the koala frames, split them, and assign them to Animations
-		koalaTexture = new Texture("koalio.png"); 
+		koalaTexture = new Texture("ivis2.png"); 
 		TextureRegion[] regions = TextureRegion.split(koalaTexture, 18, 26)[0];
 		stand = new Animation(0, regions[0]);
 		jump = new Animation(0, regions[1]);
@@ -82,7 +85,7 @@ public class TallerPlatformer extends GdxTest {
 		Koala.HEIGHT = 1 / 16f * regions[0].getRegionHeight();
 
 		// load the map, set the unit scale to 1/16 (1 unit == 16 pixels)
-		map = new TmxMapLoader().load("level1.tmx");
+		map = new TmxMapLoader().load("nivel"+NIVEL+".tmx");
 		renderer = new OrthogonalTiledMapRenderer(map, 1 / 16f);
 
 		// create an orthographic camera, shows us 30x20 units of the world
@@ -96,6 +99,8 @@ public class TallerPlatformer extends GdxTest {
 		
 		Music oggMusic = Gdx.audio.newMusic(Gdx.files.internal("music.ogg"));
 		oggMusic.play();
+		
+		GlobalNPCs.init(NIVEL);
 	}
 
 	@Override
@@ -294,6 +299,7 @@ public class TallerPlatformer extends GdxTest {
 		} else {
 			batch.draw(frame, koala.position.x + Koala.WIDTH, koala.position.y, -Koala.WIDTH, Koala.HEIGHT);
 		}
+		GlobalNPCs.render(batch,NIVEL);
 		batch.end();
 	}
 
